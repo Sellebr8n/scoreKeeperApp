@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+
+    <section id="container">
+        <div id="card">
+            <img src="https://images.unsplash.com/photo-1576617497557-22895ee5930b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+                alt="">
+            <h1>PingPong ScoreKeeper, Race to <span id="itsOver">3</span>!</h1>
+        </div>
+        <div id="info">
+            <h2>
+                <span id="p1Display">0</span> to <span id="p2Display">0</span>
+            </h2>
+        </div>
+        <div id="controls">
+            <p>Use the buttons below to keep track of your score</p>
+            <button id="p1" class="p1-btn">+1 Player One</button>
+            <button id="p2" class="p2-btn">+1 Player Two</button>
+            <button id="reset" class="reset-btn">Reset</button>
+        </div>
+        <div id="options">
+            <h3>Playing to:
+                <select name="maxScore" id="maxScore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </h3>
+            <div>
+                <label for="preserve">Preserve</label>
+                <input type="checkbox" id="preserve"></input>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
